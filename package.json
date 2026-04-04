@@ -1,8 +1,8 @@
 {
   "name": "infohub-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "InfoHub API — Express backend scaffold (src/, app vs server split).",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js",
