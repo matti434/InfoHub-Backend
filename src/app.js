@@ -6,6 +6,12 @@ const weatherRouter = require("./routes/weather");
 // Middlewares
 registerMiddlewares(app);
 
+app.use((err,req,res,next)=> {
+    if(err && err.message && err.message.startWith("CORS bloqueado")){
+        return res.status(403).json({ error:err.message});
+    }
+    return next(err);
+});
 app.use("/api/v1/weather", weatherRouter);
 
 //Rutas. Fragmento define una ruta HTTP GET en la raiz del servidor

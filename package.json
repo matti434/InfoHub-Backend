@@ -24,8 +24,9 @@
   },
   "homepage": "https://github.com/matti434/InfoHub-Backend#readme",
   "dependencies": {
-    "express": "^5.2.1",
-    "dotenv": "^16.4.7"
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
