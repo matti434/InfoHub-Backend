@@ -38,6 +38,8 @@ async function fetchOpenWeather({ lat, lon, q }) {
         feelsLikeC: raw.main?.feels_like,
         description: raw.weather?.[0]?.description,
         icon: raw.weather?.[0]?.icon,
+        lat: raw.coord?.lat,
+        lon: raw.coord?.lon
     };
 }
 
